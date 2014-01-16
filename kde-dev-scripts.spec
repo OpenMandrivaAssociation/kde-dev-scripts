@@ -64,6 +64,7 @@ This package contains various scripts for KDE development.
 %{_kde_bindir}/png2mng.pl
 %{_kde_bindir}/pruneemptydirs
 %{_kde_bindir}/qtdoc
+%{_kde_bindir}/reviewboard-am
 %{_kde_bindir}/svn-clean
 %{_kde_bindir}/svnbackport
 %{_kde_bindir}/svnchangesince
@@ -116,6 +117,7 @@ rm -f %{buildroot}%{_kde_bindir}/colorsvn
 %changelog
 * Tue Jan 14 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.1-1
 - New version 4.12.1
+- Update files
 
 * Wed Dec 04 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.11.4-1
 - New version 4.11.4
