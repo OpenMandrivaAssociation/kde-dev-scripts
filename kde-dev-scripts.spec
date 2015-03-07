@@ -42,6 +42,8 @@ This package contains various scripts for KDE development.
 %{_kde_bindir}/cvsrevertlast
 %{_kde_bindir}/cvsversion
 %{_kde_bindir}/cxxmetric
+%{_kde_bindir}/c++-copy-class-and-file
+%{_kde_bindir}/c++-rename-class-and-file
 %{_kde_bindir}/draw_lib_dependencies
 %{_kde_bindir}/extend_dmalloc
 %{_kde_bindir}/extractattr
