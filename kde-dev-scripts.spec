@@ -1,6 +1,6 @@
 Summary:	Various scripts for KDE development
 Name:		kde-dev-scripts
-Version:	14.12.3
+Version:	15.04.0
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
