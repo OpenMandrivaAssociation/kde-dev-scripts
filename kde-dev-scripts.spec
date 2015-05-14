@@ -1,6 +1,6 @@
 Summary:	Various scripts for KDE development
 Name:		kde-dev-scripts
-Version:	15.04.0
+Version:	15.04.1
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -13,7 +13,7 @@ Url:		http://www.kde.org
 %define ftpdir stable
 %endif
 Source0:	ftp://ftp.kde.org/pub/kde/%{ftpdir}/applications/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	kdelibs4-devel
+BuildRequires:	kdelibs4-devel >= 5:4.14.8
 Requires:	colorsvn
 Conflicts:	kdesdk4-core < 1:4.11.0
 Conflicts:	kdesdk4-scripts < 1:4.11.0
