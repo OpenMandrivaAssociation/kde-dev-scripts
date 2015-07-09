@@ -116,6 +116,6 @@ This package contains various scripts for KDE development.
 
 # (nl) Prefer the file from colorsvn as it is more up to date
 # and this fix a conflict between kde-dev-scripts and colorsvn
-rm -f %{buildroot}%{_kde_bindir}/colorsvn
+rm -f %{buildroot}%{_bindir}/colorsvn
 
 
