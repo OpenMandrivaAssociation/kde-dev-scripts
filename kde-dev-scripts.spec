@@ -1,7 +1,7 @@
 Summary:	Various scripts for KDE development
 Name:		kde-dev-scripts
 Version:	15.04.3
-Release:	2
+Release:	3
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2+
