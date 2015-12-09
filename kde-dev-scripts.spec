@@ -15,6 +15,7 @@ Url:		http://www.kde.org
 Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs4-devel >= 5:4.14.8
 BuildRequires: 	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5KDELibs4Support)
 BuildRequires:	docbook-dtd42-xml
 Requires:	colorsvn
 Conflicts:	kdesdk4-core < 1:4.11.0
