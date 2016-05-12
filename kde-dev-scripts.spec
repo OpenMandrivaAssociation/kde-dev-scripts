@@ -1,6 +1,6 @@
 Summary:	Various scripts for KDE development
 Name:		kde-dev-scripts
-Version:	16.04.0
+Version:	16.04.1
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
