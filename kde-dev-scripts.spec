@@ -55,6 +55,7 @@ This package contains various scripts for KDE development.
 %{_kde_bindir}/fix-include.sh
 %{_kde_bindir}/fixkdeincludes
 %{_kde_bindir}/fixuifiles
+%{_kde_bindir}/grantlee_strings_extractor.py
 %{_kde_bindir}/includemocs
 %{_kde_bindir}/kde_generate_export_header
 %{_kde_bindir}/kdedoc
