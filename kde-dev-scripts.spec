@@ -1,18 +1,13 @@
 Summary:	Various scripts for KDE development
 Name:		kde-dev-scripts
-Version:	16.12.2
+Version:	17.03.80
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2+
 Url:		http://www.kde.org
-%define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
-%if %{is_beta}
-%define ftpdir unstable
-%else
-%define ftpdir stable
-%endif
-Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
+Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs4-devel >= 5:4.14.8
 BuildRequires: 	cmake(KF5DocTools)
 BuildRequires:	cmake(KF5KDELibs4Support)
@@ -81,10 +76,12 @@ This package contains various scripts for KDE development.
 %{_kde_bindir}/svnlastlog
 %{_kde_bindir}/svnrevertlast
 %{_kde_bindir}/svnversions
+%{_bindir}/uncrustify-kf5
 %{_kde_bindir}/zonetab2pot.py
 %{_kde_bindir}/optimizegraphics
 %{_kde_bindir}/wcgrep
 %{_kde_bindir}/kde-systemsettings-tree.py
+%{_datadir}/uncrustify
 %{_kde_mandir}/man1/adddebug.1.*
 %{_kde_mandir}/man1/cheatmake.1.*
 %{_kde_mandir}/man1/create_cvsignore.1.*
