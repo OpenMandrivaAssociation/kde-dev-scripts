@@ -1,6 +1,6 @@
 Summary:	Various scripts for KDE development
 Name:		kde-dev-scripts
-Version:	17.08.3
+Version:	17.11.90
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -21,7 +21,7 @@ BuildArch:	noarch
 %description
 This package contains various scripts for KDE development.
 
-%files
+%files -f %{name}.lang
 %{_kde_bindir}/adddebug
 %{_kde_bindir}/build-progress.sh
 %{_kde_bindir}/cheatmake
@@ -118,4 +118,4 @@ This package contains various scripts for KDE development.
 # and this fix a conflict between kde-dev-scripts and colorsvn
 rm -f %{buildroot}%{_kde_bindir}/colorsvn
 
-
+%find_lang %{name} --all-name --with-man
