@@ -104,13 +104,13 @@ This package contains various scripts for KDE development.
 
 %prep
 %setup -q
-%cmake_kde4
+%cmake_kde5
 
 %build
-%make -C build
+%ninja_build -C build
 
 %install
-%makeinstall_std -C build
+%ninja_install -C build
 
 
 # (nl) Prefer the file from colorsvn as it is more up to date
