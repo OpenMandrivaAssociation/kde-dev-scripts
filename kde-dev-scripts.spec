@@ -8,6 +8,7 @@ License:	GPLv2+
 Url:		http://www.kde.org
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+BuildRequires:	cmake(ECM)
 BuildRequires: 	cmake(KF5DocTools)
 BuildRequires:	cmake(KF5KDELibs4Support)
 BuildRequires:	docbook-dtd42-xml
