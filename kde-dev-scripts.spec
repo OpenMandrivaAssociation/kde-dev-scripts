@@ -1,6 +1,6 @@
 Summary:	Various scripts for KDE development
 Name:		kde-dev-scripts
-Version:	 18.04.3
+Version:	 18.07.80
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
