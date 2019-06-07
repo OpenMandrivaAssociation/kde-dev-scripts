@@ -1,6 +1,6 @@
 Summary:	Various scripts for KDE development
 Name:		kde-dev-scripts
-Version:	 19.04.1
+Version:	 19.04.2
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
