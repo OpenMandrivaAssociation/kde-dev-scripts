@@ -1,13 +1,13 @@
 Summary:	Various scripts for KDE development
 Name:		kde-dev-scripts
-Version:	19.11.90
-Release:	2
+Version:	19.12.0
+Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2+
 Url:		http://www.kde.org
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
-Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires: 	cmake(KF5DocTools)
 BuildRequires:	cmake(KF5KDELibs4Support)
