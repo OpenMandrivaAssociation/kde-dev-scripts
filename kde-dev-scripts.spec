@@ -1,7 +1,7 @@
 Summary:	Various scripts for KDE development
 Name:		kde-dev-scripts
-Version:	19.12.1
-Release:	2
+Version:	19.12.2
+Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2+
