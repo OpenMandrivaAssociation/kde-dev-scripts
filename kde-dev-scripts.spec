@@ -1,7 +1,7 @@
 Summary:	Various scripts for KDE development
 Name:		kde-dev-scripts
-Version:	20.03.90
-Release:	2
+Version:	20.04.0
+Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2+
