@@ -1,6 +1,6 @@
 Summary:	Various scripts for KDE development
 Name:		kde-dev-scripts
-Version:	20.07.90
+Version:	20.08.0
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -97,8 +97,6 @@ This package contains various scripts for KDE development.
 %{_mandir}/man1/fixincludes.1.*
 %{_mandir}/man1/pruneemptydirs.1.*
 %{_mandir}/man1/qtdoc.1.*
-%{_mandir}/man1/reportview.1.*
-%{_mandir}/man1/transxx.1.*
 %{_mandir}/man1/zonetab2pot.py.1.*
 
 #----------------------------------------------------------------------------
