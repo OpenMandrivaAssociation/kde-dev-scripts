@@ -1,6 +1,6 @@
 Summary:	Various scripts for KDE development
 Name:		kde-dev-scripts
-Version:	21.03.90
+Version:	21.04.0
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
