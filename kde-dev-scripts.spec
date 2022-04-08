@@ -1,6 +1,6 @@
 Summary:	Various scripts for KDE development
 Name:		kde-dev-scripts
-Version:	22.03.80
+Version:	22.03.90
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
