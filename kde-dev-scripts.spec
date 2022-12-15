@@ -1,6 +1,6 @@
 Summary:	Various scripts for KDE development
 Name:		kde-dev-scripts
-Version:	22.08.3
+Version:	22.12.0
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -25,6 +25,8 @@ This package contains various scripts for KDE development.
 %{_bindir}/adddebug
 %{_bindir}/build-progress.sh
 %{_bindir}/cheatmake
+%{_bindir}/clean-forward-declaration.sh
+%{_bindir}/clean-includes.sh
 %{_bindir}/create_cvsignore
 %{_bindir}/create_makefile
 %{_bindir}/create_makefiles
