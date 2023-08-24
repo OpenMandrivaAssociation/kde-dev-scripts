@@ -1,6 +1,6 @@
 Summary:	Various scripts for KDE development
 Name:		kde-dev-scripts
-Version:	23.04.3
+Version:	23.08.0
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
