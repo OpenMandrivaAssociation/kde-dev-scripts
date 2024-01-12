@@ -1,7 +1,7 @@
 Summary:	Various scripts for KDE development
 Name:		plasma6-kde-dev-scripts
 Version:	24.01.90
-Release:	2
+Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2+
 Url:		http://www.kde.org
@@ -104,6 +104,7 @@ This package contains various scripts for KDE development.
 %prep
 %autosetup -p1 -n kde-dev-scripts-%{?git:master}%{!?git:%{version}}
 %cmake \
+        -DBUILD_WITH_QT6:BOOL=ON \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
 	-G Ninja
 
