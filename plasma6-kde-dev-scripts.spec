@@ -4,7 +4,7 @@
 Summary:	Various scripts for KDE development
 Name:		plasma6-kde-dev-scripts
 Version:	24.02.0
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 Group:		Graphical desktop/KDE
 License:	GPLv2+
 Url:		http://www.kde.org
