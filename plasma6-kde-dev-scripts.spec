@@ -5,7 +5,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	Various scripts for KDE development
 Name:		plasma6-kde-dev-scripts
-Version:	24.05.1
+Version:	24.05.2
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2+
