@@ -9,7 +9,7 @@ Version:	24.08.2
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2+
-Url:		http://www.kde.org
+Url:		https://www.kde.org
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/sdk/kde-dev-scripts/-/archive/%{gitbranch}/kde-dev-scripts-%{gitbranchd}.tar.bz2#/kde-dev-scripts-%{git}.tar.bz2
