@@ -5,7 +5,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	Various scripts for KDE development
 Name:		kde-dev-scripts
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2+
@@ -24,6 +24,11 @@ Conflicts:	kdesdk4-core < 1:4.11.0
 Conflicts:	kdesdk4-scripts < 1:4.11.0
 Obsoletes:	kdesdk4-scripts < 1:4.11.0
 BuildArch:	noarch
+
+%rename plasma6-kde-dev-scripts
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
 %description
 This package contains various scripts for KDE development.
@@ -92,40 +97,23 @@ This package contains various scripts for KDE development.
 %{_bindir}/addmocincludes
 %{_bindir}/port_new_gitlab_ci_template.sh
 %{_bindir}/uncrustify-kf5
-%{_mandir}/man1/adddebug.1.*
-%{_mandir}/man1/cheatmake.1.*
-%{_mandir}/man1/create_cvsignore.1.*
-%{_mandir}/man1/create_makefile.1.*
-%{_mandir}/man1/create_makefiles.1.*
-%{_mandir}/man1/cvscheck.1.*
-%{_mandir}/man1/cvslastchange.1.*
-%{_mandir}/man1/cvslastlog.1.*
-%{_mandir}/man1/cvsrevertlast.1.*
-%{_mandir}/man1/cxxmetric.1.*
-%{_mandir}/man1/extend_dmalloc.1.*
-%{_mandir}/man1/extractrc.1.*
-%{_mandir}/man1/fixincludes.1.*
-%{_mandir}/man1/pruneemptydirs.1.*
-%{_mandir}/man1/zonetab2pot.py.1.*
+%{_mandir}/man1/adddebug.1*
+%{_mandir}/man1/cheatmake.1*
+%{_mandir}/man1/create_cvsignore.1*
+%{_mandir}/man1/create_makefile.1*
+%{_mandir}/man1/create_makefiles.1*
+%{_mandir}/man1/cvscheck.1*
+%{_mandir}/man1/cvslastchange.1*
+%{_mandir}/man1/cvslastlog.1*
+%{_mandir}/man1/cvsrevertlast.1*
+%{_mandir}/man1/cxxmetric.1*
+%{_mandir}/man1/extend_dmalloc.1*
+%{_mandir}/man1/extractrc.1*
+%{_mandir}/man1/fixincludes.1*
+%{_mandir}/man1/pruneemptydirs.1*
+%{_mandir}/man1/zonetab2pot.py.1*
 
-#----------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n kde-dev-scripts-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-        -DBUILD_WITH_QT6:BOOL=ON \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja_build -C build
-
-%install
-%ninja_install -C build
-
-
+%install -a
 # (nl) Prefer the file from colorsvn as it is more up to date
 # and this fix a conflict between kde-dev-scripts and colorsvn
 rm -f %{buildroot}%{_bindir}/colorsvn
-
-%find_lang %{name} --all-name --with-man
